@@ -1,79 +1,259 @@
 /* used google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,700;0,800;1,400;1,500&family=Poppins:wght@400;500;600;700;800&family=Work+Sans:wght@400;500;600;700;800&display=swap');
 
-*{
+
+* {
     margin: 0;
     padding: 0;
     font-family: 'Open Sans', sans-serif;
     font-family: 'Poppins', sans-serif;
     font-family: 'Work Sans', sans-serif;
+    box-sizing: border-box;
 }
+
 /* shared style */
 
-nav{
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 30px;
 }
-.nav-title{
+
+.nav-title {
     margin-left: 40px;
 }
-.menus{
+
+.menus {
     margin-right: 160px;
 }
-nav > ul{
+
+nav>ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 20px;
 
 }
-nav li{
+
+nav li {
     list-style: none;
 }
-.search{
+
+.search {
     width: 30px;
     height: 20px;
 }
+
 /* banner section style */
-.banner{
+.banner {
     margin-left: 30px;
     margin-top: 30px;
     display: flex;
     align-items: center;
     gap: 50px;
 }
-.banner-title{
+
+.banner-title {
     font-size: 2.7rem;
     font-weight: 500;
     color: #3A3A3A;
 }
-.banner-description{
+
+.banner-description {
     font-size: 0.7rem;
     font-weight: 400;
     color: #3A3A3A;
 }
-.banner-img{
+
+.banner-img {
+    width: 450px;
+    height: 350px;
+    margin-top: 50px;
     background-image: url('./images/Circle\ design.svg');
-    margin-left: 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: 130px;
 }
-.banner-details{
+
+.banner-details {
     padding-left: 10px;
 }
-.book-btn{
+
+.book-btn {
     margin-top: 20px;
     width: 150px;
     justify-content: center;
     background-color: rgba(224, 44, 109, 1);
     border-radius: 8px;
     border: none;
-   padding-bottom: 8px;
+    padding-bottom: 8px;
     color: #FFF;
     font-size: 0.8rem;
     padding-top: 5px;
 }
-.arrow{
+
+.arrow {
     width: 20px;
     height: 10px;
+}
+
+/* sponsors section */
+.sponsors {
+    border-width: 50%;
+    margin-left: 80px;
+    margin-top: 100px;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* products image */
+.products {
+    margin-left: 80px;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.product-list {
+    margin-left: 120px;
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    gap: 15px;
+}
+
+.products-img {
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+    width: 250px;
+    height: 280px;
+}
+.products-container-title{
+    margin-right: 50px;
+    margin-bottom: 50px;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+.product-sample{
+    width: 200px;
+    height: 180px;
+}
+
+.products-title {
+    font-size: 1.2rem;
+    margin-left: 0;
+    margin-right: 110px;
+}
+
+.products-description {
+    margin-top: 5px;
+    font-size: 0.8rem;
+}
+
+.checked {
+    color: orange;
+}
+
+.see-btn {
+    padding-bottom: 10px;
+    background-color: white;
+    width: 150px;
+    margin-top: 50px;
+    margin-left: 700px;
+    border: none;
+    border-radius: 4px;
+    color: rgba(224, 44, 109, 0.87);
+    font-size: 1rem;
+    font-weight: 700;
+}
+.arrow2{
+    width: 25px;
+    height: 15px;
+    background-color:rgba(224, 44, 109, 0.87);
+
+}
+
+/* mobile screen */
+@media screen and (max-width:576px) {
+
+    nav,
+    .menus,
+    .banner, .sponsors, .products, .product-list{
+        flex-direction: column;
+    }
+    .banner-title{
+        font-size: 1.2rem;
+    }
+    .banner-description{
+        font-size: 0.7rem;
+    }
+    .product-list{
+        grid-template-columns: 1fr;
+        margin-left: 5px;
+    }
+    .products-img{
+        width: 250px;
+        height: 320px;
+    }
+    .products-container-title{
+        font-size: 1.5rem;
+        margin-left: 0;
+    }
+    .product-sample{
+        width: 200px;
+        height: 150px;
+    }
+    .see-btn{
+        font-size: 0.5rem;
+        margin-top: 10px;
+        margin-left: 70px;
+    }
+    .arrow2{
+        margin-left: 20px;
+        width: 15px;
+        height: 5px;
+    }
+    
+    .sponsors{
+        flex: 1;
+    }
+    .card{
+        margin-right: 30px;
+    }
+    nav,
+    .banner-title,
+    .banner-description,
+    .book-btn {
+        margin-left: 40px;
+    }
+
+    .menus {
+        padding-left: 50px;
+    }
+
+    .nav-title {
+        margin-left: 10px;
+        margin-right: 50px;
+    }
+
+    .menus {
+        margin-left: 40px;
+    }
+
+    .banner-img {
+        margin-right: 30px;
+        margin-top: 0;
+        margin-left: 0;
+        width: 200px;
+        height: 300px;
+    }
+
+    .banner-description {
+        font-size: 0.5rem;
+    }
+
 }
