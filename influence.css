@@ -1,0 +1,79 @@
+/* used google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,700;0,800;1,400;1,500&family=Poppins:wght@400;500;600;700;800&family=Work+Sans:wght@400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+}
+/* shared style */
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+.nav-title{
+    margin-left: 40px;
+}
+.menus{
+    margin-right: 160px;
+}
+nav > ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+
+}
+nav li{
+    list-style: none;
+}
+.search{
+    width: 30px;
+    height: 20px;
+}
+/* banner section style */
+.banner{
+    margin-left: 30px;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.banner-title{
+    font-size: 2.7rem;
+    font-weight: 500;
+    color: #3A3A3A;
+}
+.banner-description{
+    font-size: 0.7rem;
+    font-weight: 400;
+    color: #3A3A3A;
+}
+.banner-img{
+    background-image: url('./images/Circle\ design.svg');
+    margin-left: 50px;
+}
+.banner-details{
+    padding-left: 10px;
+}
+.book-btn{
+    margin-top: 20px;
+    width: 150px;
+    justify-content: center;
+    background-color: rgba(224, 44, 109, 1);
+    border-radius: 8px;
+    border: none;
+   padding-bottom: 8px;
+    color: #FFF;
+    font-size: 0.8rem;
+    padding-top: 5px;
+}
+.arrow{
+    width: 20px;
+    height: 10px;
+}
