@@ -176,17 +176,87 @@ nav li {
     background-color:rgba(224, 44, 109, 0.87);
 
 }
+/* features section */
+.features-container{
+    margin-top: 90px;
+    margin-left: 150px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.features-details{
+    margin-left: 70px;
+}
+.features-img{
+    margin-left: 20px;
+    width: 350px;
+    height: 220px;
+}
+.features-title{
+    font-size: 2rem;
+    font-weight: 500;
+}
+.features-description{
+    margin-top: 20px;
+    font-size: 0.8rem;
+}
+.join-btn{
+    padding-top: 7px;
+    width: 100px;
+    margin-top: 10px;
+    display: flex;
+    background-color: rgba(224, 44, 109, 1);
+    border: none;
+    color: white;
+    padding: 5px;
+    font-size: 0.7rem;
+    font-weight: 500;
+    gap:5px;
+    align-items: center;
+}
+.footer{
+    margin-top: 100px;
+    width: 100%;
+    height: 200px;
+    background-color: #0A0826;
+    text-align: center;
+    align-items: center;
+}
+.footer-title{
+    padding-top: 20px;
+    color: #FFF;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+.footer-description{
+    margin-top: 8px;
+    color: #D9DBE1;
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+.social-links{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
 
 /* mobile screen */
 @media screen and (max-width:576px) {
 
     nav,
     .menus,
-    .banner, .sponsors, .products, .product-list{
+    .banner, .sponsors, .products, .product-list, .features-container{
         flex-direction: column;
     }
     .banner-title{
         font-size: 1.2rem;
+    }
+    .products{
+        margin-left: 50px;
     }
     .banner-description{
         font-size: 0.7rem;
@@ -194,10 +264,11 @@ nav li {
     .product-list{
         grid-template-columns: 1fr;
         margin-left: 5px;
+        margin-right: 20px;
     }
     .products-img{
-        width: 250px;
-        height: 320px;
+        width: 300px;
+        height: 330px;
     }
     .products-container-title{
         font-size: 1.5rem;
@@ -255,5 +326,10 @@ nav li {
     .banner-description {
         font-size: 0.5rem;
     }
-
+    .features-container, .features-details{
+        margin-left: 20px;
+    }
+    .footer{
+        width: 100%;
+    }
 }
